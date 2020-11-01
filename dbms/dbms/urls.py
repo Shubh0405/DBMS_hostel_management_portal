@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# admin.site.site_header = 'Hostel Database Management Portal'
+admin.site.index_title = 'Hostel administration'
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
 ]
